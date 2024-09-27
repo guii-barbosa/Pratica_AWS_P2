@@ -26,4 +26,4 @@ jobs:
             echo "Conectando no EC2"
             echo "${{secrets.AWS_KEY}}" > private_key && chmod 600 private_key
             ssh -o StrictHostKeyChecking=no -i private_key ec2-44-198-139-206.compute-1.amazonaws.com "
-                  cd python_flask/;git pull;./executar.sh"
+                  cd Pratica_AWS_P2/;git pull;./executar.sh"
